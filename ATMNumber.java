@@ -16,7 +16,7 @@ public class Main
         int[] c = { 5, 10, 20, 50, 100, 200};
         int len = c.length;
         DecimalFormat numberFormat = new DecimalFormat("#.00");
-	    int Z = (int) ( X - C);
+	    int Z = (int) (Math.abs(X - C));
         int count = 0;
         for ( int i = 0; i < len; i ++ ){
           if(c[i] == C){
