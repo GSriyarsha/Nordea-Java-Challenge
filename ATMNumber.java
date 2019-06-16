@@ -8,7 +8,7 @@ public class Main
   public static void main (String[] args) throws java.lang.Exception
   {
     Scanner scan = new Scanner(System.in);
-	    float X = scan.nextFloat();
+	    int X = scan.nextInt();
 	    float Y = scan.nextFloat();
 	    int C = scan.nextInt();
 	    float D = scan.nextFloat();
@@ -20,7 +20,7 @@ public class Main
         int count = 0;
         for ( int i = 0; i < len; i ++ ){
           if(c[i] == C){
-          	if ( X % c[i] == 0){
+          	if ( X % C == 0){
 	               Y = Y - X - D;
                    count ++;
                    break;
@@ -30,7 +30,7 @@ public class Main
 	    if ( count == 0 ){
 	      Y = Y - ( X + Z ) - D;
 	      }
-	    if (X == 100){
+	    if (X > 100){
 	      Y = Y + D;
 	    }
 
